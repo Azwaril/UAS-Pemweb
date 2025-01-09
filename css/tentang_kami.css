@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(246, 247, 245);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Georgia;
+}
+
+nav .navbar-menu ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    margin-right: 4rem;
+}
+
+
+nav .navbar-menu ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.58;
+    background-color: #1E1E1E;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.about-section {
+    background: #a1aabb;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 30px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h1, .about-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+    font-family: mullish;
+}
+
+.about-section p {
+    font-size: 18px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 30px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 22px;
+    color: #000000;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #000000;
+}
+

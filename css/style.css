@@ -1,0 +1,145 @@
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(247, 245, 245);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.logo {
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-family: Georgia;
+}
+
+nav .navbar-menu ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    margin-right: 4rem;
+}
+
+nav .navbar-menu ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Regular', 'Arial Narrow', Arial, sans-serif;
+}
+
+.beranda {
+    background-image: url('../img/reog2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+
+section .judul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    color: aliceblue;
+}
+
+section .judul h1 {
+    font-size: 6rem;
+    -webkit-text-stroke: 1.9px black;
+    font-family: 'Georgia';
+    width: 70%;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 15rem;
+}
+
+section .judul h2 a {
+    font-size: 0.7rem;
+    font-family: 'simple';
+    text-align: center;
+    color: rgb(255, 248, 248);
+    text-decoration: none;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+}
+
+section .judul h2 a:hover {
+    background-color: rgb(2, 2, 2);
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: antiquewhite;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 1rem;
+    }
+
+    nav .navbar-menu ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 1rem;
+    }
+
+    section .judul h1 {
+        font-size: 3rem;
+        padding-top: 8rem;
+    }
+
+    section .judul h2 a {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 1.2rem;
+    }
+
+    section .judul h1 {
+        font-size: 2rem;
+        padding-top: 5rem;
+    }
+
+    section .judul h2 a {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+    }
+}
